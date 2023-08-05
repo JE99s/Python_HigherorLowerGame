@@ -1,19 +1,18 @@
-<h1>SQL Inection Attack On Mutillidae User Info Page</h1>
-Simulated SQL Injection attack that is a SQL error-based injection which involves the Mutillidae User Info page as the victim site.
+<h1>Creating a Higher or Lower Game with Python</h1>
+Small simple version of the Higher or Lower Game utilizing Python.
 <h2>Description</h2>
-<p>Project consists of a simulated SQL Injection attack that is a SQL error-based injection which involves the Mutillidae User Info page as the victim site. </p>
+<p>I enjoyed playing the Higher or Lower Game to test myself if I unnecessarily know who or what gets searched up more on Google. I want to create my own simple version of the game utilizing Python. This project will help me develop my skill in grabbing a big problem and administering it into smaller chunks to complete.</p>
 <br/>
 <h2>Utilities Used</h2>
 
-- <b>Text editor</b>
-- <b>Web browser</b>
-- <b>VMware Hypervisor</b>
+- <b>replit.com</b>
+- <b>Python</b>
+
 <h2>Environments Used</h2>
 
-- <b>Kali Linux</b>
-- <b>Metasploitable 2 (MS2) Vulnerable Machine</b>
+- <b>Web browser</b>
 <h2>Preparation</h2>
-Firstly, I want to power my ESXi machine on my VMware Workstation Pro application. Once it completely boots up, I use the provided URL on the homepage of the ESXi machine. I want to open my Kali Linux VM from Lab 00. I ensure that the network adapter is in “Bridged” mode.
+Firstly, I decide on my programming environment. An online IDE named replit.com.
 <br/>
 <img src="https://i.imgur.com/wgr3cN1.png" height="75%" width="75%" alt="Linux command line steps"/>
 <br />
