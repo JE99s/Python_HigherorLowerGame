@@ -12,19 +12,25 @@ Small simple version of the Higher or Lower Game utilizing Python.
 
 - <b>Web browser</b>
 <h2>Preparation</h2>
-Firstly, I decide on my programming environment. An online IDE named replit.com.
+Firstly, I decide on my programming environment. An online IDE named replit.com. Replit is a free online IDE that provides repositories to code anything from Python to Ruby. I’ve used this online environment before when learning Python and Java for the first time. It’s a great alternative to holding my project. Furthermore, Replit provides its own clear function which means that while code is running the screen can be cleared from a method imported from its own Repl compiler.
 <br/>
 <img src="https://i.imgur.com/wgr3cN1.png" height="75%" width="75%" alt="Linux command line steps"/>
 <br />
-My MS2 virtual machine (VM) and Kali Linux VM are in the same network. I’m also going to use Firefox on my Kali VM to connect to my MS2 web server using its IP address to further ensure that there is connectivity between the two machines.
+
+<h3>Code</h3>
+For this game, I want to be able to have two objects, the user to view information about them, and for the user to guess which one has the higher follower count. These three different goals are going to need three different Python files. I’ll create a logical draft of each <b>.py</b> file for the project.
 <br/>
-<img src="https://i.imgur.com/yScwa2c.png" height="75%" width="75%" alt="Linux command line steps"/>
+The project will contain three .py files: 
+
+main.py – the functionality of the code 
+
+art.py – the art of the code 
+
+data.py – the database of the program where all data for comparable entities or objects will be placed. (e.g., Name, description, country, Instagram followers)
+
+Here I want an ASCII type of art for my logo of the Higher or Lower Game. I want it to be simple. After a few attempts and a few pieces of paper, here is a drawing of what I have in mind for the logo of the game.
 <br />
-<h3>Repair Mutillidae Configuration File</h3>
-Next, I navigate to my MS2 VM. When it comes to a default installation of MS2 the database name is set to “metasploit” by default inside the machine’s mutillidae configuration file. For my attack to be successful, I need to change “metasploit” to “owasp10”. So, on my MS2 VM, I execute <i>sudo nano /var/www/mutillidae/config.inc</i> to modify the configuration file, running the command as a root user. I enter the password when prompted and I’m in the configuration file.
-At the last line where it begins with “$dbname” I set it equal to “owasp10” instead of “metasploit”. After that, I just press <b>CTRL+X</b> to exit, type <b>Y</b> to save the file, and press <b>Enter</b> to confirm and exit the file.
-<br/>
-<img src="https://i.imgur.com/NummpFf.png" height="75%" width="75%" alt="Linux command line steps"/>
+<img src="https://i.imgur.com/zhgbGc1.png" height="75%" width="75%" alt="Linux command line steps"/>
 <br />
 Back on my Kali Linux VM, in the same MS2 web server, I will click the Mutillidae link, and it takes me to the Mutillidae website page. I click <b>OWASP Top 10 > A1 - Injection > SQLi - Extract Data > User Info</b>. As shown in the error-based SQL injection video gracefully made by NFE Systems Ltd. To get into a SQL injection you should start by entering special or reserved characters in the user name field to produce SQL syntax errors to exploit. Following along with the video instructions I made my own list of special reserved characters in a <b>.txt</b> document, as shown below.
 <br/>
